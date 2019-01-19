@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+<header>
+<title>
+- Mencoba Fungsi push();
+</title>
+
+<script>
+
+    var total = 0;
+    var items = [];
+
+    function save(){
+        var item = document.getElementById('item').value;
+        var price = document.getElementById('price').value;
+
+        total = parseInt(total, 10) + parseInt(price, 10);
+        items.push(item);
+    }
+
+    function hitung(){
+        document.getElementById('items').innerHTML = "ITEM YANG DI BELI " + items;
+        document.getElementById('total').innerHTML = "TOTAL PRICE : Rp " + total;
+    }
+</script>
+
+</header>
+<body>
+
+    Item <input type="text" id="item"> <br>
+    Price <input type="number" id="price"> <br>
+
+    <button id="save" onClick="save()"> SAVE </button>
+    <button id="hitung" onClick="hitung()"> HITUNG </button>
+
+
+    <div id="items"></div>
+    <div id="total"></div>
+
+</body>
+</html>

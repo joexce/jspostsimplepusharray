@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mencari Rata-Rata </title>
+</head>
+<body>
+
+<script> 
+
+//tentukan rata2 kelas
+//murid di harapkan mengerti fungsi looping, dan logika increment
+//murid di harapkan sekaligus belajar statistik dasar
+//murid di harapkan mengerti fungsi if
+
+var nilaiKelas = [10,5,8,5,6,7,4,10,10,6];
+
+var jumlahNilai = 0;
+for(var i=0; i<=nilaiKelas.length - 1; i++){
+    jumlahNilai = jumlahNilai + nilaiKelas[i];
+}
+
+var rataRata = jumlahNilai / nilaiKelas.length;
+
+console.log("RATA-RATA NILAI KELAS " + rataRata);
+
+if(rataRata <= 0){
+    console.log("WAH MURIDNYA ATAU GURUNYA NIH KOK BISA DAPET 0 SEMUA");
+}
+if(rataRata <= 5){
+    console.log("MUNGKIN MATERI YANG DI BERIKAN TERLALU SULYYTT");
+}
+if(rataRata > 5){
+    console.log("WOW HEBAT KEREN ANAK MULAI MENGERTI SELAMAT");
+}
+
+</script>
+</body>
+</html>

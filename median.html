@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mencari Median </title>
+</head>
+<body>
+
+<script> 
+
+// median adalah mencari nilai tengah
+// RUMUS http://emerer.com/cara-menghitung-median-modus-mode-kuartil-dan-desil/
+
+var nilaiKelas = [1,2,3,4];
+var median = 0;
+if(nilaiKelas.length %2 == 0){
+    median = parseFloat(((nilaiKelas.length/2)+(nilaiKelas.length/2)+1)/2);
+    console.log('MEDIANNYA ADALAH ' + median);
+} else {
+    median = (nilaiKelas.length + 1) / 2;
+    console.log('MEDIANNYA ADALAH ' + nilaiKelas[median - 1]);
+    //kenapa - 1 ?
+    // karena nilaiKelas ini array yang di hitung dari 0
+}
+
+</script>
+</body>
+</html>
